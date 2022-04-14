@@ -1,0 +1,624 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Med center, Medical Services, Common Lab Tests, Lab Tests Online, ​Why Choose Our Clinic?, 24/7, ​Medical Center System, Our Services, 001-234-5678​001-987-7654">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="{% static 'static/css/nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{%  static 'static/css/main.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'static/js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'static/js/nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.5.4, nicepage.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+    <!--bulma-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!--widget-->
+<div class="contact-container">
+    <div class="contact">
+        <div>Связь с нами</div>
+        <span class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+        <ul>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=77713395901&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C,%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." rel="nofollow" target="_blank">
+                    <i class="fa fa-brands fa-whatsapp"></i>
+                </a>
+            </li>
+            <li>
+                <a data-bs-toggle="modal" data-bs-target="#Modal1">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a data-bs-toggle="modal" data-bs-target="#Modal2">
+                    <i class="fa fa-phone"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <button class="contact-btn">Связаться с нами</button>
+
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Обратная связь</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Ваше ФИО">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Ваш телефон">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Комментарий"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Не нашли, что искали?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ваш телефон">
+                </div>
+            </div>
+            <div class="modal-footer">
+                    <button class="btn btn-primary">Жду звонка</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        const contact_btn = document.querySelector('.contact-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const contact_container = document.querySelector('.contact-container');
+        contact_btn.addEventListener('click', () => {
+            contact_container.classList.toggle('visible')
+        });
+        close_btn.addEventListener('click', () => {
+            contact_container.classList.remove('visible')
+        });
+    </script>
+<!--widget-->
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""}
+    </script>
+    <meta name="theme-color" content="#7391c4">
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode">
+ <!--navbar-->
+     <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img class="navbar-item" src="{% static 'images/logo.png' %}" width="100"  height="200">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="{% url 'index_urls' %}">Главная</a>
+      <a class="navbar-item" href="{% url 'services_urls' %}">Услуги</a>
+      <a class="navbar-item" href="{% url 'contacts_urls' %}">Контакты</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">О нас</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="{% url 'about_us_urls' %}">Блог директора</a>
+          <a class="navbar-item" href="{% url 'mission_urls' %}">Миссия и видение</a>
+          <a class="navbar-item" href="{% url 'history_urls' %}">История</a>
+          <a class="navbar-item" href="{% url 'laws_urls' %}">Законы и Нормативные правовые акты</a>
+
+          <hr class="navbar-divider">
+          <a class="navbar-item">Report an issue</a>
+        </div>
+      </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Для населения</a>
+           <div class="navbar-dropdown">
+          <a class="navbar-item" href="{% url 'rights_urls' %}">Права и обязанности пациентов</a>
+          <a class="navbar-item" href="{% url 'questions_urls' %}">Общие вопросы</a>
+           </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+            {% if request.user.is_authenticated %}
+          <a class="button is-info" href="{% url 'logout_urls' %}">
+            <strong>Выйти</strong></a>
+            {% else %}
+          <a class="button is-light">Регистрация</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+</nav>
+  <!--navbar-->
+    <section class="u-align-left u-clearfix u-image u-valign-middle-sm u-valign-middle-xs u-section-1" id="carousel_b7e9">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-31 u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <h1 class="u-custom-font u-font-lato u-text u-text-body-alt-color u-text-1" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Left">Мед центр Medixo</h1>
+                  <h5 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-2">Твое здоровье в твоих руках</h5>
+                  <p class="u-text u-text-body-alt-color u-text-3">Центр, оказывающий населению различные виды консультативно-диагностических услуг.</p>
+                  <a class="u-active-white u-border-none u-btn u-btn-rectangle u-button-style u-custom-font u-font-lato u-hover-white u-palette-4-light-2 u-radius-0 u-btn-2" data-bs-toggle="modal" data-bs-target="#online_order" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X">Запись онлайн</a>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-29 u-image-1">
+                <div class="u-container-layout u-valign-bottom u-container-layout-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <!--online order-->
+ <div class="modal fade" id="online_order" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+     <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel1">Онлайн запись</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+             </button>
+         </div>
+         <div class="modal-body">
+             <form action="{% url 'order_online_url' %}" method="post">
+                 {% csrf_token %}
+                     <div style="">
+                         <label for="exampleInputEmail1">Услуги</label>
+                         <select name="service" id="service" style="">
+                             {% for service in services %}
+                                <option value="{{ service.id }}">{{ service.name }}</option>
+                             {% endfor %}
+                         </select>
+                     </div>
+                     <div style="display: flex; flex-direction: column" class="mt-2">
+                         <label for="exampleInputEmail1">Время приёма</label>
+                         <select style="border: 1px solid #ced4da; border-radius: 0.25rem; padding: .375rem .75rem;" name="time" id="time"></select>
+                     </div>
+                     <div class="mt-2">
+                         <label for="exampleInputEmail1">ФИО</label>
+                         <input type="text" class="form-control" id="exampleInputEmail1" name="full_name" aria-describedby="emailHelp" placeholder="Ваше ФИО">
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputPassword1">Телефон</label>
+                         <input type="text" class="form-control" name="phone" placeholder="Ваш телефон">
+                     </div>
+                      <div class="form-group mt-2">
+                         <label for="exampleInputPassword1">Почта</label>
+                         <input type="text" class="form-control" name="email" placeholder="Ваш E-mail">
+                     </div>
+                     <div class="form-group">
+                         <label for="exampleInputPassword1">Комментарий</label>
+                         <input type="text" class="form-control" name="message" id="exampleInputPassword1" placeholder="Ваш комментарий">
+                     </div>
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                     <button type="submit" class="btn btn-primary">Подтвердить</button>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+
+{% if DJdata %}
+     <script type="text/javascript">
+         $("#online_order").on('show.bs.modal', function(){
+            $.ajax({
+                url: '/get_service_time/${$("#service_option:selected").val()}',
+                type: 'GET',
+                success: function(r) {
+                    resp(r)
+                }
+            })
+         });
+         $("#service").on('change', function(){
+            $.ajax({
+                url: '/get_service_time/${$("#service_option:selected").val()}',
+                type: 'GET',
+                success: function(r) {
+                    resp(r)
+                }
+            })
+         });
+         function resp(r) {
+            if (r) {
+                let time = $('#time')
+                time.html('')
+                r.map(function(item){
+                    time.append($('<option>').val(item.fields.time).text(item.fields.time))
+                })
+            }
+         }
+     </script>
+{% endif %}
+
+
+
+    <section class="u-align-center u-clearfix u-section-2" id="carousel_1559">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-lato u-text u-text-palette-4-base u-text-1">Почему мы?</h1>
+        <p class="u-text u-text-grey-50 u-text-2">Наш центр предоставит Вам и Вашей семье полный спектр медицинских услуг.&nbsp;</p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-border-1 u-border-palette-4-base u-container-style u-list-item u-repeater-item u-shape-rectangle u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-spacing-10 u-text-palette-4-base u-white u-icon-1" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Down"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 88 88" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7938"></use></svg><svg class="u-svg-content" viewBox="0 0 88 88" id="svg-7938"><path d="M66.56,43.44,64,41.33a12.6,12.6,0,0,0,2.9-8,12.32,12.32,0,0,0-21.69-8L44,26.88l-1.25-1.5a12.32,12.32,0,0,0-21.69,8,12.6,12.6,0,0,0,2.9,8l-2.52,2.11A15.6,15.6,0,0,1,44,22,15.61,15.61,0,0,1,66.56,43.44Z"></path><path d="M42.62,56.42,37.18,44.64l-2,4.27H17.79V45.63H33.12l4.05-8.83,5.08,11,6.6-18.53,6.06,16.4h15.3v3.28H52.62l-3.7-10.07Z"></path><path d="M46.39,70.21H41.61L28,54.09,30.5,52l12.62,15h1.76l12.6-15L60,54.09Z"></path></svg></span>
+                <h4 class="u-text u-text-palette-4-base u-text-3">Современные технологии</h4>
+                <p class="u-text u-text-4">Наука не стоит на месте, мы изучаем и внедряем новейшие технологии</p>
+              </div>
+            </div>
+            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-border-1 u-border-palette-4-base u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-spacing-10 u-text-palette-4-base u-white u-icon-2" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Down"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 88 88" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3c9e"></use></svg><svg class="u-svg-content" viewBox="0 0 88 88" id="svg-3c9e"><path d="M66.56,43.44,64,41.33a12.6,12.6,0,0,0,2.9-8,12.32,12.32,0,0,0-21.69-8L44,26.88l-1.25-1.5a12.32,12.32,0,0,0-21.69,8,12.6,12.6,0,0,0,2.9,8l-2.52,2.11A15.6,15.6,0,0,1,44,22,15.61,15.61,0,0,1,66.56,43.44Z"></path><path d="M42.62,56.42,37.18,44.64l-2,4.27H17.79V45.63H33.12l4.05-8.83,5.08,11,6.6-18.53,6.06,16.4h15.3v3.28H52.62l-3.7-10.07Z"></path><path d="M46.39,70.21H41.61L28,54.09,30.5,52l12.62,15h1.76l12.6-15L60,54.09Z"></path></svg></span>
+                <h4 class="u-text u-text-palette-4-base u-text-5">Удобное расположение</h4>
+                <p class="u-text u-text-6">Центр находится в центре города и добраться не составит труда</p>
+              </div>
+            </div>
+            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-border-1 u-border-palette-4-base u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-icon u-icon-circle u-spacing-10 u-text-palette-4-base u-white u-icon-3" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Down"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 88 88" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bf7c"></use></svg><svg class="u-svg-content" viewBox="0 0 88 88" id="svg-bf7c"><path d="M66.56,43.44,64,41.33a12.6,12.6,0,0,0,2.9-8,12.32,12.32,0,0,0-21.69-8L44,26.88l-1.25-1.5a12.32,12.32,0,0,0-21.69,8,12.6,12.6,0,0,0,2.9,8l-2.52,2.11A15.6,15.6,0,0,1,44,22,15.61,15.61,0,0,1,66.56,43.44Z"></path><path d="M42.62,56.42,37.18,44.64l-2,4.27H17.79V45.63H33.12l4.05-8.83,5.08,11,6.6-18.53,6.06,16.4h15.3v3.28H52.62l-3.7-10.07Z"></path><path d="M46.39,70.21H41.61L28,54.09,30.5,52l12.62,15h1.76l12.6-15L60,54.09Z"></path></svg></span>
+                <h4 class="u-text u-text-palette-4-base u-text-7">качественное оборудование</h4>
+                <p class="u-text u-text-8">Наш центр оборудован новейшей техникой для качественного лечения</p>
+              </div>
+            </div>
+            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-border-1 u-border-palette-4-base u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white">
+              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-icon u-icon-circle u-spacing-10 u-text-palette-4-base u-white u-icon-4" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Down"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 88 88" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-93a4"></use></svg><svg class="u-svg-content" viewBox="0 0 88 88" id="svg-93a4"><path d="M66.56,43.44,64,41.33a12.6,12.6,0,0,0,2.9-8,12.32,12.32,0,0,0-21.69-8L44,26.88l-1.25-1.5a12.32,12.32,0,0,0-21.69,8,12.6,12.6,0,0,0,2.9,8l-2.52,2.11A15.6,15.6,0,0,1,44,22,15.61,15.61,0,0,1,66.56,43.44Z"></path><path d="M42.62,56.42,37.18,44.64l-2,4.27H17.79V45.63H33.12l4.05-8.83,5.08,11,6.6-18.53,6.06,16.4h15.3v3.28H52.62l-3.7-10.07Z"></path><path d="M46.39,70.21H41.61L28,54.09,30.5,52l12.62,15h1.76l12.6-15L60,54.09Z"></path></svg></span>
+                <h4 class="u-text u-text-palette-4-base u-text-9">Обслуживание на высшем уровне</h4>
+                <p class="u-text u-text-10">Предоставление услуг и обслуживание не оставят вас равнодушными</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="carousel_7a9d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-33 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-25 u-layout-cell-1">
+                    <div class="u-container-layout u-container-layout-1">
+                      <h1 class="u-align-center-sm u-align-center-xs u-custom-font u-font-lato u-text u-text-palette-4-base u-text-1">Общие <span style="font-weight: 700;">Лабораторные тесты</span>
+                        <br>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-35 u-image-1" src="" data-image-width="1125" data-image-height="750">
+                    <div class="u-container-layout u-container-layout-2" src=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-27 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-size-35">
+                    <div class="u-layout-row">
+                          <a href="#" class="u-active-white u-border-none u-btn u-btn-rectangle u-button-style u-custom-font u-font-lato u-hover-white u-palette-4-light-2 u-radius-0 u-btn-1" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X">Подать заявку</a>
+                    </div>
+                  </div>
+                  <div class="u-size-25">
+                    <div class="u-layout-row">
+                        <div class="u-container-layout u-container-layout-4" src=""></div>
+                      </div>
+                      <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-35 u-layout-cell-5">
+                        <div class="u-container-layout u-container-layout-5">
+                          <h5 class="u-text u-text-palette-4-base u-text-4">Общеклинические</h5>
+
+                        </div>
+                          <div class="u-container-layout u-container-layout-5">
+                          <h5 class="u-text u-text-palette-4-base u-text-4">Гемотологические</h5>
+                           <p class="u-text u-text-6"><a href="#" class="u-active-none u-border-1 u-border-grey-75 u-btn u-button-link u-button-style u-hover-none u-none u-text-body-color u-btn-2">Ещё...</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-palette-4-light-1 u-section-4" id="carousel_39e8">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h1 class="u-align-left u-custom-font u-font-lato u-text u-text-body-alt-color u-text-1"> Как мы работаем?<br>
+                  </h1>
+                  <h2 class="u-align-left u-text u-text-body-alt-color u-text-2" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Left">24/7</h2>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-valign-bottom u-container-layout-2"><span class="u-icon u-icon-circle u-text-body-alt-color u-icon-1" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 27.555 27.555" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2ba7"></use></svg><svg class="u-svg-content" viewBox="0 0 27.555 27.555" x="0px" y="0px" id="svg-2ba7" style="enable-background:new 0 0 27.555 27.555;"><g><path d="M13.777,0C7.108,0,1.701,5.407,1.701,12.076c0,3.45,1.454,6.553,3.773,8.752L5.07,27.555l5.736-3.787   c0.952,0.241,1.944,0.383,2.971,0.383c6.67,0,12.076-5.406,12.076-12.076C25.854,5.407,20.447,0,13.777,0z M12.61,11.342   c0,1.24-0.258,2.219-0.774,2.936s-1.4,1.352-2.654,1.9l-0.945-1.789c0.771-0.361,1.304-0.722,1.598-1.08   c0.295-0.36,0.459-0.784,0.493-1.273H8.237V7.974h4.373V11.342z M19.317,11.342c0,1.24-0.258,2.219-0.774,2.936   c-0.516,0.719-1.4,1.352-2.654,1.9l-0.944-1.789c0.771-0.361,1.304-0.722,1.599-1.08c0.295-0.36,0.459-0.784,0.493-1.273h-2.091   V7.974h4.373L19.317,11.342L19.317,11.342z"></path>
+</g></svg></span>
+                  <p class="u-text u-text-body-alt-color u-text-3">Наш опыт показывает, что клиенты нуждаются в обширной поддержке, которая требует от нас высокого профессионализма, быстрого реагирования на изменения в международном и внутреннем законодательстве и знания правовой системы разных стран.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-5" id="carousel_e375">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-palette-4-light-3 u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Up">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <div class="u-border-15 u-border-palette-4-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div>
+                <h3 class="u-custom-font u-font-montserrat u-text u-text-palette-4-base u-text-1" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">336</h3>
+                <p class="u-custom-font u-heading-font u-text u-text-palette-4-base u-text-2">Пациентов</p>
+                <p class="u-text u-text-3">вылеченных пациентов в нашей клиники</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-palette-4-light-3 u-repeater-item u-shape-rectangle u-list-item-2" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Up">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <div class="u-border-15 u-border-palette-4-dark-1 u-expanded-width u-line u-line-horizontal u-line-2"></div>
+                <h3 class="u-custom-font u-font-montserrat u-text u-text-palette-4-base u-text-4" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">10</h3>
+                <p class="u-custom-font u-heading-font u-text u-text-palette-4-base u-text-5"> лет работы в сфере медицины</p>
+                <p class="u-text u-text-6">ааааа</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-palette-4-light-3 u-repeater-item u-shape-rectangle u-list-item-3" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Up">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <div class="u-border-15 u-border-palette-4-dark-1 u-expanded-width u-line u-line-horizontal u-line-3"></div>
+                <h3 class="u-custom-font u-font-montserrat u-text u-text-palette-4-base u-text-7" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">108</h3>
+                <p class="u-custom-font u-heading-font u-text u-text-palette-4-base u-text-8">happy clients</p>
+                <p class="u-text u-text-9">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-palette-4-light-3 u-repeater-item u-shape-rectangle u-list-item-4" data-animation-name="slideIn" data-animation-duration="2000" data-animation-direction="Up">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <div class="u-border-15 u-border-palette-4-dark-1 u-expanded-width u-line u-line-horizontal u-line-4"></div>
+                <h3 class="u-custom-font u-font-montserrat u-text u-text-palette-4-base u-text-10" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">100+</h3>
+                <p class="u-custom-font u-heading-font u-text u-text-palette-4-base u-text-11">работников</p>
+                <p class="u-text u-text-12">Наш персонал состоит только из высококвалифицированных и опытных врачей.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-6" id="carousel_aa08">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-custom-font u-font-lato u-text u-text-default u-text-palette-4-base u-text-1">Наши врачи</h2>
+        <p class="u-text u-text-2"> Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Ultricies mi  et ultrices neque ornare aenean vitae semper quis lectus.</p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+              {% for staff in staff %}
+                <div class="u-border-1 u-border-palette-4-base u-container-style u-list-item u-repeater-item u-shape-rectangle u-list-item-1" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X">
+                  <div class="u-container-layout u-similar-container u-container-layout-1">
+                    <img class="u-expanded-width u-image u-image-default u-image-1" src="{{ staff.image }}" alt="" data-image-width="1350" data-image-height="900">
+                    <h3 class="u-custom-font u-font-open-sans u-text u-text-default u-text-palette-4-base u-text-3">{{ staff.id }}</h3>
+                    <p class="u-text u-text-grey-50 u-text-4" style="margin-bottom: 25px">{{ staff.surname }} {{ staff.name }}</p>
+                      <a href="{% url 'staff_info_urls' id=staff.id %}">
+                          <button class="btn btn-link">Подробнее</button>
+                      </a>
+                  </div>
+                </div>
+              {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-7" id="carousel_a251">
+      <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-center u-container-style u-image u-layout-cell u-left-cell u-size-20 u-size-20-md u-image-1" data-image-width="1125" data-image-height="750">
+              <div class="u-container-layout u-valign-middle u-container-layout-1"></div>
+            </div>
+            <div class="u-align-center u-container-style u-layout-cell u-palette-4-base u-size-20 u-size-20-md u-layout-cell-2">
+              <div class="u-container-layout u-valign-middle u-container-layout-2"><span class="u-icon u-icon-circle u-text-body-alt-color u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 484 484" style="undefined"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a773"></use></svg><svg class="u-svg-content" viewBox="0 0 484 484" x="0px" y="0px" id="svg-a773" style="enable-background:new 0 0 484 484;"><g><g><path d="M414.74,95.558c-21.512-21.516-50.12-33.364-80.544-33.364c-30.428,0-59.032,11.848-80.544,33.364l-9.044,9.044    l-9.044-9.044c-21.516-21.516-50.124-33.364-80.548-33.364c-30.428,0-59.032,11.848-80.544,33.364    c-44.416,44.408-44.416,116.672,0,161.084L236.12,418.29c2.344,2.344,5.412,3.516,8.484,3.516c3.072,0,6.14-1.172,8.492-3.512    L414.74,256.646c21.516-21.512,33.364-50.12,33.364-80.544C448.104,145.674,436.256,117.07,414.74,95.558z M397.768,239.674    l-153.16,153.164L91.444,239.674c-35.056-35.056-35.056-92.092,0-127.148c16.98-16.98,39.556-26.332,63.572-26.332    c24.012,0,46.592,9.352,63.576,26.332l17.528,17.528c4.688,4.688,12.28,4.688,16.968,0l17.528-17.528    c16.984-16.98,39.56-26.332,63.576-26.332s46.596,9.352,63.576,26.332C432.824,147.582,432.824,204.618,397.768,239.674z"></path>
+</g>
+</g><g><g><path d="M56,213.806H12c-6.628,0-12,5.372-12,12s5.372,12,12,12h44c6.628,0,12-5.372,12-12S62.628,213.806,56,213.806z"></path>
+</g>
+</g><g><g><path d="M431.992,214.194H317.144l-17.872-39.308c-1.348-2.972-4.284-4.78-7.624-4.684c-3.26,0.14-6.108,2.24-7.196,5.316    l-36.528,102.936l-44.408-122.98c-1.096-3.036-3.916-5.12-7.148-5.272c-3.456-0.16-6.236,1.66-7.612,4.584l-29.84,63.408h-98.92    c-4.42,0-8,3.584-8,8s5.264,7.612,9.684,7.612h104c3.1,0,4.236-1.4,5.556-4.204l23.788-50.548l45.452,125.86    c1.144,3.168,4.152,5.28,7.524,5.28c0.008,0,0.016,0,0.016,0c3.38-0.008,6.388-2.14,7.516-5.324l37.376-105.332l11.804,25.964    c1.296,2.86,5.832,4.304,8.968,4.304h120c4.416,0,6.312-3.196,6.312-7.612S436.408,214.194,431.992,214.194z"></path>
+</g>
+</g><g><g><path d="M472,209.806h-36c-6.628,0-12,5.372-12,12s5.372,12,12,12h36c6.628,0,12-5.372,12-12S478.628,209.806,472,209.806z"></path>
+</g>
+</g></svg></span>
+                <h2 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-1">Наши услуги</h2>
+                <p class="u-text u-text-body-alt-color u-text-2">Регулярное посещение врача является ключом к здоровому образу жизни. Независимо от того, чувствуете ли вы последствия обычной простуды или просто приходите на обследование, мы хотим убедиться, что у вас есть все необходимое...</p>
+                <a href="{% url 'services_urls' %}" class="u-active-white u-border-none u-btn u-btn-rectangle u-button-style u-custom-font u-font-lato u-hover-white u-palette-4-light-2 u-radius-0 u-btn-1" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X">смотреть все</a>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-20 u-size-20-md u-image-2" data-image-width="536" data-image-height="750">
+              <div class="u-container-layout u-valign-middle u-container-layout-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-palette-4-dark-2 u-section-8" id="carousel_08e0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-text-palette-4-base u-icon-1" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 24 24" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d79c"></use></svg><svg class="u-svg-content" viewBox="0 0 24 24" id="svg-d79c"><path d="M12,21.373c-2.15527,0-7.46484-4.20117-9.45312-8.98926a.9999.9999,0,0,1,.92383-1.3833L7.46484,11,9.168,8.44531a.9996.9996,0,0,1,1.78027.23828l1.35352,4.06055.86621-1.29883A1.00027,1.00027,0,0,1,14,11h3a1,1,0,0,1,0,2H14.53516L12.832,15.55469a.9996.9996,0,0,1-1.78027-.23828L9.69824,11.25586,8.832,12.55469A1.00027,1.00027,0,0,1,8,13l-2.918.00049c2.10742,3.645,5.9873,6.32861,6.92188,6.37256.74023-.03516,3.916-2.07715,6.13379-5.16553,1.3252-1.8457,2.73047-4.65576,1.90039-7.55957a3.66738,3.66738,0,0,0-3.34863-2.64307,3.80662,3.80662,0,0,0-3.76074,2.73975,1.00046,1.00046,0,0,1-1.85742,0A3.81422,3.81422,0,0,0,7.31055,4.00488,3.66738,3.66738,0,0,0,3.96191,6.64795a6.5335,6.5335,0,0,0-.23926,1.41016.99971.99971,0,1,1-1.99609-.11523,8.51963,8.51963,0,0,1,.31152-1.84473A5.66991,5.66991,0,0,1,7.209,2.00732,5.53309,5.53309,0,0,1,12,4.3208a5.51264,5.51264,0,0,1,4.791-2.31348,5.66991,5.66991,0,0,1,5.1709,4.09082c1.08984,3.81738-.73242,7.33789-2.45312,9.61963C17.27637,18.67725,13.69727,21.373,12,21.373Z" style="fill:currentColor"></path></svg></span>
+                <h4 class="u-align-center u-text u-text-1">кардиология</h4>
+                <p class="u-text u-text-2">Анализ биения сердца и выявление заболевания сердечно-сосудистой системы человека</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-text-palette-4-base u-icon-2" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bed5"></use></svg><svg id="svg-bed5" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" class="u-svg-content"><g><g><path d="M125.696,125.994c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S131.216,125.994,125.696,125.994z"></path>
+</g>
+</g><g><g><path d="M215.691,312.984h-29.998v-29.998c0-5.522-4.478-10-10-10s-9.999,4.478-9.999,10v29.998h-29.998    c-5.522,0-10,4.478-10,9.999s4.478,10,10,10h29.998v29.998c0,5.522,4.478,10,9.999,10s10-4.478,10-10v-29.998h29.998    c5.522,0,10-4.478,10-10S221.214,312.984,215.691,312.984z"></path>
+</g>
+</g><g><g><path d="M485.578,321.984c-22.105-38.286-70.981-51.389-109.274-29.279l-40.618,23.45v-86.836c0-10.735-3.55-21.388-9.999-29.998    l-49.997-66.661v-28.386c11.638-4.128,19.999-15.242,19.999-28.279V29.998C295.687,13.457,282.23,0,265.689,0H85.698    C69.157,0,55.699,13.457,55.699,29.998v45.998c0,13.035,8.361,24.151,19.999,28.279v28.386l-50.001,66.665    c-6.446,8.606-9.996,19.258-9.996,29.993v193.66c0,27.569,22.429,49.997,49.997,49.997h160.702    c22.421,37.583,70.767,50.161,108.664,28.279L456.3,431.258C494.255,409.34,507.794,360.479,485.578,321.984z M75.698,29.998    c0-5.514,4.486-10,9.999-10h179.991c5.514,0,10,4.486,10,10v45.998c0,5.514-4.486,9.999-10,9.999H85.698    c-5.514,0-9.999-4.486-9.999-9.999V29.998z M41.701,211.319l51.996-69.326c1.298-1.73,2-3.836,2-6v-29.998h159.992v19.999h-89.995    c-5.522,0-10,4.478-10,10s4.478,10,10,10h94.995l48.993,65.322c3.202,4.275,5.191,9.39,5.792,14.674H35.913    C36.513,220.705,38.502,215.59,41.701,211.319z M65.699,452.977c-16.541,0-29.998-13.457-29.998-29.998v-10.099h181.675    c-3.171,12.965-3.15,26.813,0.481,40.098H65.699z M225.219,392.98H35.7V245.987h279.986V327.7l-60.619,35.002    C242.428,370.003,232.212,380.396,225.219,392.98z M325.066,483.935c-28.697,16.571-65.367,6.771-81.949-21.946    c-16.661-28.994-6.564-65.498,21.952-81.969l54.277-31.338l59.997,103.915L325.066,483.935z M446.3,413.939l-49.637,28.659    l-59.998-103.917l49.638-28.656c28.716-16.578,65.373-6.761,81.955,21.957C484.913,360.844,474.785,397.49,446.3,413.939z"></path>
+</g>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></span>
+                <h4 class="u-align-center u-text u-text-3">терапия</h4>
+                <p class="u-text u-text-4">Устранение заболевания или травмы, патологического состояния или иного нарушения жизнедеятельности, восстановление и улучшение здоровья.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-icon u-icon-circle u-icon-3" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 32 32" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-582c"></use></svg><svg class="u-svg-content" viewBox="0 0 32 32" id="svg-582c" style="enable-background:new 0 0 32 32;"><style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style><path d="M20.5,3c-0.6,0-1.1,0.1-1.7,0.2c0,0,0,0,0,0c-1.1-1.1-3.1-1.1-4.2,0C13.8,4,13.2,6.3,13,7.5c-0.7,0.4-1.7,0.4-2.3-0.3  c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4C10,9.5,11,9.8,12,9.8c0.8,0,1.6-0.3,2.3-0.8c1.2-0.2,3.7-0.8,4.6-1.6c0.6-0.6,0.9-1.5,0.9-2.4  C20,5,20.2,5,20.5,5c3.6,0,6.5,2.9,6.5,6.5S24.1,18,20.5,18h-3.2l6.3-4.2c0.4-0.2,0.5-0.7,0.4-1.1c-0.1-0.4-0.5-0.7-1-0.7H5  c-0.4,0-0.8,0.3-1,0.7c-0.1,0.4,0,0.9,0.4,1.1l6.4,4.2C9.2,18.4,8,19.8,8,21.5c0,1.9,1.6,3.5,3.5,3.5H13v3h-2c-0.6,0-1,0.4-1,1  s0.4,1,1,1h4.5c1.9,0,3.5-1.6,3.5-3.5S17.4,23,15.5,23H15v-3h5.5c4.7,0,8.5-3.8,8.5-8.5S25.2,3,20.5,3z M10,21.5  c0-0.8,0.7-1.5,1.5-1.5H13v3h-1.5C10.7,23,10,22.3,10,21.5z M17,26.5c0,0.8-0.7,1.5-1.5,1.5H15v-3h0.5C16.3,25,17,25.7,17,26.5z"></path></svg></span>
+                <h4 class="u-align-center u-text u-text-5">Педиатрия</h4>
+                <p class="u-text u-text-6">Педиатры нашей клиники могут быть организованы до или после вашей выписки из больницы/родов</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-icon u-icon-circle u-text-palette-4-base u-icon-4" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 32 32" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e526"></use></svg><svg class="u-svg-content" viewBox="0 0 32 32" id="svg-e526"><g id="science_technology_medical_biology_dna_laboratory_medicine_test_chemistry_chemical"><path d="M29,28H21V25.82a3,3,0,0,0,2-2.45A7.4,7.4,0,0,0,21.47,9.19,5,5,0,0,0,13.56,3.4L5.87,11.1h0v0L3.58,13.38a1,1,0,0,0-.25.41l-1.28,4.1a1,1,0,0,0,.24,1L5.1,21.71a1.19,1.19,0,0,0,1.05.23l4.43-1.62a1.1,1.1,0,0,0,.37-.23l1.94-1.94h0L20,11.05a5.89,5.89,0,0,1,4,1.56,5.6,5.6,0,0,1-1.47,8.78A3,3,0,1,0,19,25.82V28H3a1,1,0,0,0,0,2H29a1,1,0,0,0,0-2ZM15,4.81A2.8,2.8,0,0,1,17,4h0a3.08,3.08,0,0,1,3,3,2.81,2.81,0,0,1-.81,2l-7,7L8,11.81ZM9.69,18.52,6.07,19.84,4.14,17.91l1-3.29,1.39-1.39,4.21,4.21ZM20,22a1,1,0,1,1-1,1A1,1,0,0,1,20,22Z"></path>
+</g></svg></span>
+                <h4 class="u-align-center u-text u-text-7">Лаборатория</h4>
+                <p class="u-text u-text-8">Лабораторные заказы принимаются день в день, результаты выявляются в ближайшее время</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-9" id="carousel_204c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-image u-layout-cell u-right-cell u-size-39 u-image-1" data-image-width="1620" data-image-height="1080">
+                <div class="u-container-layout u-container-layout-1"></div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-21 u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <h2 class="u-custom-font u-font-montserrat u-text u-text-palette-4-base u-text-1" data-animation-name="flipIn" data-animation-duration="2000" data-animation-direction="X">001-234-5678 <br>001-987-7654
+                  </h2>
+                  <h6 class="u-text u-text-2">121 Rock Sreet, 21 Avenue,&nbsp;New York,&nbsp;NY 92103-9000</h6>
+                  <p class="u-text u-text-3"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                  <a href="https://nicepage.com/html-templates" class="u-active-white u-border-none u-btn u-btn-rectangle u-button-style u-custom-font u-font-lato u-hover-white u-palette-4-light-2 u-radius-0 u-btn-1">read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-palette-4-base u-repeater-item u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-icon u-icon-circle u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 513.64 513.64" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d614"></use></svg><svg class="u-svg-content" viewBox="0 0 513.64 513.64" x="0px" y="0px" id="svg-d614" style="enable-background:new 0 0 513.64 513.64;"><g><g><path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"></path>
+</g>
+</g></svg></span>
+                <h5 class="u-text u-text-body-alt-color u-text-4">Call Us</h5>
+                <p class="u-text u-text-body-alt-color u-text-5">1 (234) 567-891,<br>1 (234) 987-654
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-palette-4-base u-repeater-item u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-icon u-icon-circle u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-97cc"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-97cc" style="enable-background:new 0 0 512 512;"><g><g><path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"></path>
+</g>
+</g></svg></span>
+                <h5 class="u-text u-text-body-alt-color u-text-6">Location</h5>
+                <p class="u-text u-text-body-alt-color u-text-7">121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-palette-4-base u-repeater-item u-list-item-3">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5"><span class="u-icon u-icon-circle u-text-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f3af"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-f3af"><g><path d="m386.058 256c0-8.284 6.716-15 15-15h31.587c-7.224-85.814-75.831-154.421-161.645-161.645v31.588c0 8.284-6.716 15-15 15s-15-6.716-15-15v-31.588c-85.814 7.224-154.421 75.831-161.645 161.645h31.587c8.284 0 15 6.716 15 15s-6.716 15-15 15h-31.587c7.224 85.814 75.831 154.421 161.645 161.645v-31.588c0-8.284 6.716-15 15-15s15 6.716 15 15v31.588c85.814-7.224 154.421-75.831 161.645-161.645h-31.587c-8.284 0-15-6.716-15-15zm-39.467-71.629-79.838 82.087c-5.558 5.714-14.618 6.086-20.625.835l-59.598-52.101c-6.237-5.452-6.873-14.929-1.42-21.165 5.452-6.237 14.928-6.875 21.166-1.421l48.889 42.739 69.921-71.891c5.776-5.938 15.273-6.069 21.211-.295 5.938 5.778 6.07 15.274.294 21.212z"></path><path d="m256 0c-141.159 0-256 114.841-256 256s114.841 256 256 256 256-114.841 256-256-114.841-256-256-256zm0 463.286c-114.298 0-207.286-92.988-207.286-207.286s92.988-207.286 207.286-207.286 207.286 92.988 207.286 207.286-92.988 207.286-207.286 207.286z"></path>
+</g></svg></span>
+                <h5 class="u-text u-text-body-alt-color u-text-8">Hours</h5>
+                <p class="u-text u-text-body-alt-color u-text-9">Mon – Fri …… 11 am – 8 pm, Sat, Sun&nbsp;&nbsp;…… 6 am – 8 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--footer-->
+<div style="background-color: #536766" >
+    <div class="container">
+    <footer class="row row-cols-5 py-5 my-5 border-top">
+    <div class="col">
+      <a href="/" class="d-flex align-items-center mb-3 link-light text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-light">© 2022</p>
+    </div>
+
+    <div class="col">
+
+    </div>
+
+    <div class="col">
+      <h5 style="color: white">О нас</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="{% url 'about_us_urls' %}" class="nav-link p-0 text-light">Блог директора</a></li>
+        <li class="nav-item mb-2"><a href="{% url 'mission_urls' %}" class="nav-link p-0 text-light">Миссия и видение</a></li>
+        <li class="nav-item mb-2"><a href="{% url 'history_urls' %}" class="nav-link p-0 text-light">История</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5 style="color: white">Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5 style="color: white">Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+</div>
+</body>
+</html>

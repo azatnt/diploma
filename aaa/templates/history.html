@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>История</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <link href="{% static 'static/css/blog.css' %}" rel="stylesheet" />
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+         <link rel="stylesheet" href="{% static 'static/css/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{%  static 'static/css/Главная.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'static/js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'static/js/nicepage.js' %}" defer=""></script>
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a style="text-decoration: none" class="navbar-item" href="{% url 'index_urls' %}">Главная</a>
+        <a class="navbar-item" href="{% url 'services_urls' %}">Услуги</a>
+        <a class="navbar-item" href="{% url 'contacts_urls' %}">Контакты</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">О нас</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="{% url 'about_us_urls' %}">Блог директора</a>
+          <a class="navbar-item" href="{% url 'mission_urls' %}">Миссия и видение</a>
+          <a class="navbar-item" href="{% url 'history_urls' %}">История</a>
+          <a class="navbar-item" href="{% url 'laws_urls' %}">Законы и Нормативные правовые акты</a>
+          <a class="navbar-item" href="{% url 'contacts_urls' %}">Контакты</a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">Report an issue</a>
+        </div>
+      </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Для населения</a>
+           <div class="navbar-dropdown">
+          <a class="navbar-item" href="{% url 'rights_urls' %}">Права и обязанности пациентов</a>
+          <a class="navbar-item" href="{% url 'questions_urls' %}">Общие вопросы</a>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+            {% if request.user.is_authenticated %}
+          <a class="button is-info" href="{% url 'logout_urls' %}">
+            <strong>Выйти</strong></a>
+            {% else %}
+          <a class="button is-light">Регистрация</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url({% static 'images/history.jpg' %})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1><b>История</b></h1>
+                            <span class="subheading">Медицинский центр MEDIXO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container">
+            <div class="row featurette">
+                <h1 class="featurette-heading" align="center"><b>История</b><p><span class="text-muted">медицинского центра MEDIXO</span></p></h1>
+                <p class="lead"><b>Медицинский центр MEDIXO была открыта в 1971 году.</b></p>
+                <p class="lead">За время своего существования клинику возглавляли опытные руководители здравоохранения.
+С 1971 по 1973 год – Котляренко М.А., с 1974 по 1996 г. главным врачом работал заслуженный врач РК, кандидат медицинских наук Турабаев А.Т.
+С 1996 по 2012 год больницу возглавлял Тажиев Е.Б. С февраля 2012г по февраль 2017 года больницу возглавлял Абдуллаев М.Ш.
+С февраля 2017 года – возглавляет Турдалин Н.Б.</p>
+                <p class="lead">До 1974 года больница именовалась, как городская клиническая больница №12. Больница являлась базой института усовершенствования врачей с 11 кафедрами. В 1974 централизовано - приемное отделение и пункт выдачи больничных листков, а так же администрация были перемещены в новое здание. Открылась библиотека, столовая для сотрудников на 76 посадочных мест и конференц-зал на 500 мест. В 1975 году в ЦГКБ перебазирован городской отдел здравоохранения и оргметодотдел. В том же году вступил в строй физиотерапевтический корпус, функционировала клинико-биохимическая и централизованная лаборатория, операционное и стерилизационное отделение, аптека. В июне 1976 года больница получила свою проектную прачечную, и 25 августа 1977 года открыта лаборатория радиоизотопной диагностики. Данный метод позволял изучать функциональное состояние печени, почек, эндокринных органов. Уже на тот период формировался высококвалифицированный кадровый состав врачей и сотрудников кафедры.</p>
+                <p class="lead">К 1978 году больница функционировала на 910 стационарных коек и имела поликлинику, обслуживающую 80.000 населения г. Алматы. За год поликлинику посетили около 500.000 человек, на тот момент поликлиника имела 59 лечебно-диагностических кабинетов. На базе поликлиники находились единственные в республике речевой центр, глаукомный кабинет, лаборатория по приему луча лазера. Выдвигалось предложение создание реабилитационного центра, который бы в дальнейшем способствовал повышению эффективности работы поликлинических врачей, тем самым создавая новые приоритеты профилактической направленности здравоохранения. Международная конференция ВОЗ по ПМСП, прошедшая 12 сентября 1978 г. в г. Алматы, отразила необходимость срочных действий со стороны правительства, представителей здравоохранения и других сфер, все мировое сообщество по защите здоровья всех людей земли, и приняла декларацию, которая стала называться Алма-атинской декларацией. Конференция постановила, что Здоровье- это состояние полного физического, психического и социального благополучия, а не только отсутствия болезни и недееспособности, это основополагающее право человека. Наша клиника стала объектом посещения делегатов Алма-атинской конференции ВОЗ.</p>
+            </div>
+        </div>
+
+    <!--footer-->
+<div class="container">
+    <footer class="row row-cols-5 py-5 my-5 border-top">
+    <div class="col">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-muted">© 2021</p>
+    </div>
+
+    <div class="col">
+
+    </div>
+
+    <div class="col">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
