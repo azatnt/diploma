@@ -108,3 +108,13 @@ def order_online(request):
     recipient = str(request.POST.get('email'))
     send_mail(subject, message, EMAIL_HOST_USER, [recipient], fail_silently=False)
     return redirect('index_urls')
+
+
+def feedback(request):
+    if request.method == 'POST':
+        Feedback.objects.create(full_name=request.POST.get('full_name'),
+                                phone=request.POST.get('phone'),
+                                email=request.POST.get('email'),
+                                comment=request.POST.get('comment'))
+        return redirect('index_urls')
+    return redirect('index_urls')

@@ -17,6 +17,7 @@ urlpatterns = [
     path('services', services, name='services_urls'),
     path('get_service_time/<int:id>', get_service_time, name='get_service_time_url'),
     path('order_online', order_online, name='order_online_url'),
-    path('send_message', send_message, name='send_message_url')
+    path('send_message', send_message, name='send_message_url'),
+    path('feedback', feedback, name='feedback_url')
 
 ]

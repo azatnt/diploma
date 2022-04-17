@@ -46,7 +46,7 @@ class Staff(models.Model):
     surname = models.CharField(max_length=255)
     des = models.TextField()
     service = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
-    image = models.ImageField(upload_to='static/images', blank=True, null=True)
+    image = models.ImageField(upload_to='staff/images', blank=True, null=True)
 
     def __str__(self):
         return self.name + ' ' + self.surname
@@ -93,3 +93,17 @@ class Analiz(models.Model):
     class Meta:
         verbose_name = "Анализы"
         verbose_name_plural = "Анализы"
+
+
+class Feedback(models.Model):
+    full_name = models.CharField(max_length=120)
+    phone = models.CharField(max_length=120)
+    email = models.CharField(max_length=120)
+    comment = models.TextField()
+
+    def __str__(self):
+        return self.full_name + ' ' + self.phone
+
+    class Meta:
+        verbose_name = "Обратная связь"
+        verbose_name_plural = "Обратная связь"
