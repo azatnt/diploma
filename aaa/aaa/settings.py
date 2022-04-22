@@ -129,10 +129,10 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smpt.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
-EMAIL_HOST = 'smpt.gmail.com'
-EMAIL_HOST_USER = 'medcenter.medixo@gmail.com'
-EMAIL_HOST_PASSWORD = 'dgH3Ygr6LzjBXJyk'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'askhat.kamalov99@gmail.com'
+EMAIL_HOST_PASSWORD = 'Askhat12345'
 EMAIL_PORT = 587

@@ -197,7 +197,7 @@
                     <a class="button is-info" href="{% url 'logout_urls' %}">
                         <strong>Выйти</strong></a>
                 {% else %}
-                    <a class="button is-light">Регистрация</a>
+                    <a href="{% url 'register_urls' %}" class="button is-light">Регистрация</a>
                 {% endif %}
             </div>
         </div>
@@ -287,22 +287,22 @@
     </div>
 </div>
 
-{% if DJdata %}
+{#{% if DJdata %}#}
     <script type="text/javascript">
-        $("#online_order").on('show.bs.modal', function () {
+        $("#online_order").on('show.bs.modal', function(){
             $.ajax({
-                url: '/get_service_time/${$("#service_option:selected").val()}',
+                url: `/get_service_time/${$("#service option:selected").val()}`,
                 type: 'GET',
-                success: function (r) {
+                success: function(r) {
                     resp(r)
                 }
             })
         });
-        $("#service").on('change', function () {
+        $("#service").on('change', function(){
             $.ajax({
-                url: '/get_service_time/${$("#service_option:selected").val()}',
+                url: `/get_service_time/${$("#service option:selected").val()}`,
                 type: 'GET',
-                success: function (r) {
+                success: function(r) {
                     resp(r)
                 }
             })
@@ -312,13 +312,13 @@
             if (r) {
                 let time = $('#time')
                 time.html('')
-                r.map(function (item) {
+                r.map(function(item) {
                     time.append($('<option>').val(item.fields.time).text(item.fields.time))
                 })
             }
         }
-    </script>
-{% endif %}
+  </script>
+{#{% endif %}#}
 
 
 
